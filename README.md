@@ -8,7 +8,7 @@
 ---
 
 ## 1. 📖 Project Abstract
-SmartSpend is a console-based Java application designed to solve the problem of unorganized personal finances[cite: 8, 10]. In a world of complex banking apps, this project offers a lightweight, privacy-focused solution for students to track daily expenses, categorize spending (e.g., Food, Travel), and monitor budget limits.
+SmartSpend is a console-based Java application designed to solve the problem of unorganized personal finances. In a world of complex banking apps, this project offers a lightweight, privacy-focused solution for students to track daily expenses, categorize spending (e.g., Food, Travel), and monitor budget limits.
 
 I built this project to demonstrate **Object-Oriented Programming (OOP)** principles, **Modular Architecture**, and **Java File Persistence** without relying on external databases.
 
