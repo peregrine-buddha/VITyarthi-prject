@@ -15,15 +15,17 @@ I built this project to demonstrate **Object-Oriented Programming (OOP)** princi
 ---
 
 ## 2. 🏗️ System Architecture & Design
-The project follows a **Service-Layer Architecture**, which separates the data (Model) from the logic (Service) and the user interaction (Main/View)[cite: 50, 52].
+The project follows a **Service-Layer Architecture**, which separates the data (Model) from the logic (Service) and the user interaction (Main/View).
 
 ### 2.1 The Logic Flow
 1.  **Input Layer:** The `Main` class acts as the controller. It displays the menu, accepts user input via `Scanner`, and passes it to the Service layer.
 2.  **Service Layer:** `UserManager` and `ExpenseManager` handle the "heavy lifting"—validating passwords, calculating totals, and formatting dates.
 3.  **Data Layer:** The `FileHandler` writes objects to `.csv` files, ensuring data persists after the program closes.
+    <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a922eb47-eccd-4fa6-ad86-3f3871827af3" />
+
 
 ### 2.2 Design Decisions
-* **Why Console instead of GUI?** I focused on backend logic and algorithm efficiency over visual design. [cite_start]This allowed me to implement robust error handling and file I/O[cite: 41].
+* **Why Console instead of GUI?** I focused on backend logic and algorithm efficiency over visual design. This allowed me to implement robust error handling and file I/O.
 * **Why CSV/Text Files?** Since a SQL database setup was out of scope, I implemented a custom file parser. This mimics a database by reading data into `ArrayLists` at startup and writing updates back to the file immediately.
 * **Authentication:** I used a simple Session Check. When a user logs in, their `User` object is stored in a `currentUser` variable. All expense queries are filtered by this User ID to ensure privacy.
 
@@ -31,7 +33,7 @@ The project follows a **Service-Layer Architecture**, which separates the data (
 
 ## 3. 📂 Technical Code Details (Class Dictionary)
 
-The codebase is organized into specific packages to meet the modularity requirement[cite: 57, 58]:
+The codebase is organized into specific packages to meet the modularity requirement:
 
 ### 📦 Package: `model`
 * **`User.java`**: A POJO (Plain Old Java Object) implementing `Serializable`.
